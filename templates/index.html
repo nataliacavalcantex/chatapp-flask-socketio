@@ -57,7 +57,7 @@ $(document).ready(function() {
 	var socket = io.connect('http://127.0.0.1:5000');
 	socket.on( 'connect', function() {
         socket.emit( 'my event', {
-          data: 'User Connected'
+          data: 'Connected Sucessfully'
         } )
         var form = $( 'form' ).on( 'submit', function( e ) {
           e.preventDefault()
